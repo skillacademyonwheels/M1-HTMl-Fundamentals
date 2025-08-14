@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+</head>
+
+<body>
+    <fieldset>
+        <label style="align-items: center;">MarkSheet</label><br><br>
+        <form action="./action_page.php"
+            oninput="x.value=((parseInt(m1.value)+parseInt(m2.value)+parseInt(m3.value))/3)">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" value=""> <br><br>
+            <label>Enter Marks: S1</label><br>
+            <select name="Subject1" id="subject1">
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="Humanities">Humanities</option>
+            </select>
+            <input type="number" name="m1" id="m1"> <br><br><br>
+
+            <label>Enter Marks: S2</label>
+            <select name="Subject2" id="subject2">
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="Humanities">Humanities</option>
+            </select>
+            <input type="number" name="m2" id="m2"> <br><br><br>
+
+            <label>Enter Marks: S3</label>
+            <select name="Subject3" id="subject3">
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="Humanities">Humanities</option>
+            </select>
+            <input type="number" name="m3" id="m3"> <br><br><br>
+            Average : <output name="x" for="m1 m2 m3"> </output>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
